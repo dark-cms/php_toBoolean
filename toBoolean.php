@@ -6,7 +6,7 @@
  * @param bool $exact
  * @return bool / null
  */
-function toBoolean($value,$exact = false) {
+function toBoolean($value,$exact = true) {
   if(is_bool($value) === true) {
     return (bool)$value;
   } else if(is_numeric($value) === true) {
@@ -29,5 +29,5 @@ function toBoolean($value,$exact = false) {
             return true;
         }
     }
-    return null;
+    return ($exact)?null:$value;
 }
