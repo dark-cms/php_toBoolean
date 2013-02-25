@@ -10,9 +10,9 @@ function toBoolean($value,$exact = true) {
   if(is_bool($value) === true) {
     return (bool)$value;
   } else if(is_numeric($value) === true) {
-    if(($exact && (int)$value === 0) || (!$exact && (int)$value <= 0))  {
+    if(($exact && (int)$value === 0) || (!$exact && (double)$value <= 0))  {
       return false;
-    } else if(($exact && (int)$value === 1) || (!$exact &&(int)$value > 0)) {
+    } else if(($exact && (int)$value === 1) || (!$exact &&(double)$value > 0)) {
       return true;
     }
   } else if(ctype_digit($value) === true) {
