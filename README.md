@@ -5,17 +5,17 @@ php sucks if u need a translation from "true" => true and "false"=> false
 
 
 You know :
-
+--
 "false",false,0,"0",  
 all known as values for false
 
 and you know:
-
+--
 "True",true,1,"1",     
 all known as values for true
 
 but php handles this on some unhappy ways
-
+--
 Check it out.
 
 
